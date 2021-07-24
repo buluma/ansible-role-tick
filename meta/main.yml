@@ -1,0 +1,29 @@
+---
+
+galaxy_info:
+  author: Michael Buluma
+  description: Setup TICK Stack
+  min_ansible_version: 2.1
+  license: MIT
+  issue_tracker_url: https://github.com/buluma/ansible-tick/issues
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - utopic
+        - vivid
+        - wily
+        - xenial
+  galaxy_tags:
+    - monitoring
+    - influxdb
+    - telegraf
+    - chronograf
+    - kapacitor
+    - system
+    - docker
+    - containers
+
+dependencies:
+  - mlabouardy.docker
