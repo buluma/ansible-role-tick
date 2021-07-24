@@ -8,6 +8,8 @@ name: CI
   schedule:
     - cron: "30 5 * * 2"
 
+  workflow_dispatch:
+  
 defaults:
   run:
     working-directory: 'buluma.ansible-tick'
