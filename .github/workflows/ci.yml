@@ -1,0 +1,90 @@
+---
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "30 5 * * 2"
+
+defaults:
+  run:
+    working-directory: 'buluma.ansible-tick'
+
+jobs:
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+        with:
+          path: 'buluma.ansible-tick'
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+    # - name: Install test dependencies.
+      #  run: pip3 install yamllint
+
+      # - name: Lint code.
+      #  run: |
+      #    yamllint .travis.yml
+
+      - name: Create Issue on lint failure.
+        if: failure()
+        uses: buluma/create-issue-action@v2.0.0
+        with:
+          title: Lint Failed
+          token: ${{secrets.GITHUB_TOKEN}}
+          assignees: ${{github.actor}}
+          labels: bug
+          body: Workflow lint test failed for commit ${{github.sha}}
+
+  molecule:
+    name: Molecule
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        distro:
+          - centos7
+          - centos8
+          - ubuntu1604
+          - ubuntu1804
+          - ubuntu2004
+          - ubuntu2104
+
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+        with:
+          path: 'buluma.ansible-tick'
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies.
+        run: pip3 install ansible molecule[docker] docker
+
+      - name: Run Molecule tests.
+        run: molecule test
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
+          MOLECULE_DISTRO: ${{ matrix.distro }}
+
+      - name: Create Issue on molecule test failure.
+        if: failure()
+        uses: buluma/create-issue-action@v2.0.0
+        with:
+          title: Build Failed
+          token: ${{secrets.GITHUB_TOKEN}}
+          assignees: ${{github.actor}}
+          labels: bug
+          body: Workflow molecule test failed for commit ${{github.sha}}
