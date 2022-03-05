@@ -22,6 +22,16 @@ molecule:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "bookworm"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
 
 testing:
   script:
@@ -37,6 +47,16 @@ testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "bookworm"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
 
 role_testing:
   script:
@@ -52,6 +72,16 @@ role_testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "bookworm"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
 
 galaxy:
   script:
@@ -69,3 +99,13 @@ role_testing_live:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "bookworm"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
