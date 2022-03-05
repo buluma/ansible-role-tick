@@ -36,12 +36,6 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "ubuntu"
-            tag: "latest"
-          - image: "ubuntu"
-            tag: "bionic"
-          - image: "ubuntu"
-            tag: "focal"
           - image: "ubuntu-python3"
             tag: "latest"
           - image: "ubuntu-python3"
