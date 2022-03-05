@@ -24,4 +24,4 @@ galaxy_info:
     - containers
 
 dependencies:
-  - mlabouardy.docker
+  - buluma.docker

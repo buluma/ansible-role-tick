@@ -8,5 +8,5 @@
     # Test we can logon to 'webservers' and execute python with json lib.
     # ansible webservers -m ping
 
-    - name: Example from an Ansible Playbook
+    - name: Test connection is available
       ansible.builtin.ping:
