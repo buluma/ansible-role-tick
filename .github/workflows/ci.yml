@@ -67,7 +67,6 @@ jobs:
           - ubuntu1604
           - ubuntu1804
           - ubuntu2004
-          - ubuntu2104
 
     steps:
       - name: Check out the codebase.
