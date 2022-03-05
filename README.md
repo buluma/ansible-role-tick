@@ -4,7 +4,7 @@ Install, configure TICK.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-tick/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-tick/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-tick/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-tick)|[![quality](https://img.shields.io/ansible/quality/58303)](https://galaxy.ansible.com/buluma/tick)|[![downloads](https://img.shields.io/ansible/role/d/58303)](https://galaxy.ansible.com/buluma/tick)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-tick.svg)](https://github.com/buluma/ansible-role-tick/releases/)|
+|[![github](https://github.com/buluma/ansible-role-tick/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-tick/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-tick/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-tick)|[![quality](https://img.shields.io/ansible/quality/58303)](https://galaxy.ansible.com/buluma/tick)|[![downloads](https://img.shields.io/ansible/role/d/58303)](https://galaxy.ansible.com/buluma/tick)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-tick.svg)](https://github.com/buluma/ansible-role-tick/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
