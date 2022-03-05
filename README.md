@@ -1,10 +1,10 @@
-# [ansible-tick](#ansible-tick)
+# [tick](#tick)
 
 Install, configure TICK.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-ansible-tick/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ansible-tick/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ansible-tick/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ansible-tick)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/ansible-tick)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/ansible-tick)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ansible-tick.svg)](https://github.com/buluma/ansible-role-ansible-tick/releases/)|
+|[![github](https://github.com/buluma/ansible-role-tick/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-tick/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-tick/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-tick)|[![quality](https://img.shields.io/ansible/quality/58303)](https://galaxy.ansible.com/buluma/tick)|[![downloads](https://img.shields.io/ansible/role/d/58303)](https://galaxy.ansible.com/buluma/tick)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-tick.svg)](https://github.com/buluma/ansible-role-tick/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -38,7 +38,7 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-ansible-tick/blob/main/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-tick/blob/main/requirements.txt).
 
 ## [Status of used roles](#status-of-requirements)
 
@@ -59,7 +59,7 @@ This role is a part of many compatible roles. Have a look at [the documentation 
 
 Here is an overview of related roles:
 
-![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-ansible-tick/png/requirements.png "Dependencies")
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-tick/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
@@ -77,7 +77,7 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 
 
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-ansible-tick/issues)
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-tick/issues)
 
 ## [License](#license)
 

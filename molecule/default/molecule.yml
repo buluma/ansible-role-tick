@@ -14,7 +14,7 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "ansible-tick-${image:-docker-ubuntu-systemd}-${tag:-latest}${TOX_ENVNAME}"
+  - name: "tick-${image:-docker-ubuntu-systemd}-${tag:-latest}${TOX_ENVNAME}"
     image: "${namespace:-buluma}/${image:-docker-ubuntu-systemd}:${tag:-latest}"
     command: /sbin/init
     volumes:
