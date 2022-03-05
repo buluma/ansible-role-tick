@@ -36,12 +36,18 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "docker-ubuntu-systemd"
+          - image: "ubuntu"
             tag: "latest"
-          - image: "docker-ubuntu-systemd"
+          - image: "ubuntu"
             tag: "bionic"
-          - image: "docker-ubuntu-systemd"
+          - image: "ubuntu"
             tag: "focal"
+          - image: "ubuntu-python3"
+            tag: "latest"
+          - image: "ubuntu-python3"
+            tag: "ubuntu20.04-python3.8.10"
+          - image: "ubuntu-python3"
+            tag: "ubuntu20.04-python3.8.5"
     steps:
       - name: checkout
         uses: actions/checkout@v3
