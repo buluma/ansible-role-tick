@@ -39,13 +39,6 @@ jobs:
         with:
           python-version: '3.x'
 
-    # - name: Install test dependencies.
-      #  run: pip3 install yamllint
-
-      # - name: Lint code.
-      #  run: |
-      #    yamllint .travis.yml
-
       - name: Create Issue on lint failure.
         if: failure()
         uses: buluma/create-issue-action@v2.0.0
