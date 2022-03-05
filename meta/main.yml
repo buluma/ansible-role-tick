@@ -1,10 +1,12 @@
 ---
-
 galaxy_info:
   author: Michael Buluma
-  description: Setup TICK Stack
-  min_ansible_version: 2.1
-  license: MIT
+  namespace: buluma
+  role_name: tick
+  description: Install Tick
+  license: Apache-2.0
+  company: none
+  min_ansible_version: "2.10"
   issue_tracker_url: https://github.com/buluma/ansible-tick/issues
 
   platforms:

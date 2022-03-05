@@ -1,0 +1,12 @@
+---
+- name: Verify
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    # Test we can logon to 'webservers' and execute python with json lib.
+    # ansible webservers -m ping
+
+    - name: Example from an Ansible Playbook
+      ansible.builtin.ping:
