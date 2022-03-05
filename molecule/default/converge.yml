@@ -8,7 +8,5 @@
 
   roles:
     - role: ansible-role-tick
-    - role: buluma.bootstrap
-    - role: buluma.buildtools
     - role: buluma.docker_ce
     - role: buluma.docker
