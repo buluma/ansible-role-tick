@@ -3,8 +3,8 @@
   copy:
     src: influxdb.conf
     dest: "/home/{{remote_user}}/influxdb.conf"
-    owner: "{{remote_user}}"
-    group: "{{remote_user}}"
+    owner: "{{ remote_user }}"
+    group: "{{ remote_user }}"
     mode: 0644
 
 - name: Setup InfluxDB
@@ -17,14 +17,14 @@
       - "8083:8083"
       - "8086:8086"
     volumes:
-      - "/home/{{remote_user}}/influxdb.conf:/etc/influxdb/influxdb.conf"
+      - "/home/{{ remote_user }}/influxdb.conf:/etc/influxdb/influxdb.conf"
 
 - name: Telegraf configuration
   copy:
     src: telegraf.conf
     dest: "/home/{{remote_user}}/telegraf.conf"
-    owner: "{{remote_user}}"
-    group: "{{remote_user}}"
+    owner: "{{ remote_user }}"
+    group: "{{ remote_user }}"
     mode: 0644
 
 - name: Setup Telegraf
@@ -36,15 +36,15 @@
     links:
       - "influxdb:influxdb"
     volumes:
-      - "/home/{{remote_user}}/telegraf.conf:/etc/telegraf/telegraf.conf"
+      - "/home/{{ remote_user }}/telegraf.conf:/etc/telegraf/telegraf.conf"
       - "/var/run/docker.sock:/var/run/docker.sock"
 
 - name: Kapacitor configuration
   copy:
     src: kapacitor.conf
     dest: "/home/{{remote_user}}/kapacitor.conf"
-    owner: "{{remote_user}}"
-    group: "{{remote_user}}"
+    owner: "{{ remote_user }}"
+    group: "{{ remote_user }}"
     mode: 0644
 
 - name: Setup Kapacitor
@@ -56,7 +56,7 @@
     links:
       - "influxdb:influxdb"
     volumes:
-      - "/home/{{remote_user}}/kapacitor.conf:/etc/kapacitor/kapacitor.conf"
+      - "/home/{{ remote_user }}/kapacitor.conf:/etc/kapacitor/kapacitor.conf"
 
 - name: Setup Chronograf
   docker_container:
