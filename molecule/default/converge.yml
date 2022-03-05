@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   gather_facts: no
-  vars:
-    ansible_remote_tmp: /tmp/ansible
+  # vars:
+  #  ansible_remote_tmp: /tmp/ansible
 
   roles:
     - role: ansible-role-tick
