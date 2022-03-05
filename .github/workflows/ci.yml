@@ -9,7 +9,16 @@ name: CI
     - cron: "30 5 * * 2"
 
   workflow_dispatch:
-  
+    inputs:
+      debug:
+        type: boolean
+        required: false
+        default: 'false'
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
 defaults:
   run:
     working-directory: 'buluma.ansible-tick'
