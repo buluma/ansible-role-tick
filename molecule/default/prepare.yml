@@ -7,4 +7,5 @@
   roles:
     - role: buluma.bootstrap
     - role: buluma.docker
+    - role: buluma.docker_ce
     - role: buluma.buildtools

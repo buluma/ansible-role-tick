@@ -20,6 +20,10 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
 
   roles:
     - role: buluma.tick
+    - role: buluma.bootstrap
+    - role: buluma.buildtools
+    - role: buluma.docker_ce
+    - role: buluma.docker
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
@@ -33,6 +37,7 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
   roles:
     - role: buluma.bootstrap
     - role: buluma.docker
+    - role: buluma.docker_ce
     - role: buluma.buildtools
 ```
 
@@ -50,6 +55,7 @@ The following roles are used to prepare a system. You can prepare your system in
 |-------------|--------|--------|
 |[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 |[buluma.docker](https://galaxy.ansible.com/buluma/docker)|[![Build Status GitHub](https://github.com/buluma/ansible-role-docker/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-docker/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-docker/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-docker)|
+|[buluma.docker_ce](https://galaxy.ansible.com/buluma/docker_ce)|[![Build Status GitHub](https://github.com/buluma/ansible-role-docker_ce/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-docker_ce/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-docker_ce/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-docker_ce)|
 |[buluma.buildtools](https://galaxy.ansible.com/buluma/buildtools)|[![Build Status GitHub](https://github.com/buluma/ansible-role-buildtools/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-buildtools/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-buildtools/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-buildtools)|
 
 ## [Dependencies](#dependencies)
