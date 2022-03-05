@@ -2,7 +2,7 @@
 - name: InfluxDB configuration
   copy:
     src: influxdb.conf
-    dest: "/home/{{remote_user}}/influxdb.conf"
+    dest: "/home/{{ remote_user }}/influxdb.conf"
     owner: "{{ remote_user }}"
     group: "{{ remote_user }}"
     mode: 0644
@@ -42,7 +42,7 @@
 - name: Kapacitor configuration
   copy:
     src: kapacitor.conf
-    dest: "/home/{{remote_user}}/kapacitor.conf"
+    dest: "/home/{{ remote_user }}/kapacitor.conf"
     owner: "{{ remote_user }}"
     group: "{{ remote_user }}"
     mode: 0644
