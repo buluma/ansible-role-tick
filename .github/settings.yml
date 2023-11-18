@@ -5,4 +5,4 @@
 repository:
   description: Install, configure TICK.
   homepage: https://buluma.github.io/
-  topics: monitoring, influxdb, telegraf, chronograf, kapacitor, system, docker, containers, ansible, molecule, tox, playbook, hacktoberfest
+  topics: monitoring, influxdb, telegraf, chronograf, kapacitor, system, docker, containers, ansible, molecule, tox, playbook
